@@ -1,0 +1,77 @@
+
+<html>
+
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <title>Meine Webseite</title>
+        
+        <style type="text/css">
+            
+            .circle {
+                
+                width: 100px;
+                height: 100px;
+                margin: 40px;
+                float:left;
+                border-radius: 50px;
+            }
+
+            #circle1 {
+                background-color: red;
+            }
+
+            #circle2 {
+                background-color: blue;
+            }
+
+            #circle3 {
+                background-color: yellow;
+            }
+            
+           
+        </style>        
+        
+    </head>
+
+
+    <body>
+        
+
+        <div  id="circle1" class="circle"></div>
+        <div  id="circle2" class="circle"></div>
+        <div  id="circle3" class="circle"></div>
+
+        <button id="button1">Cirlce1 verschwindet</button><br>
+        <button id="button2">Cirlce2 verschwindet</button><br>
+        <button id="button3">Cirlce3 verschwindet</button><br>
+        <button id="button4">Reset</button><br>
+
+
+
+        <script type="text/javascript">
+            
+            document.getElementById("button1").onclick = function() {
+                document.getElementById("circle1").style.display = "none";
+            }  
+
+            document.getElementById("button2").onclick = function() {
+                document.getElementById("circle2").style.display = "none";
+            }  
+            document.getElementById("button3").onclick = function() {
+                document.getElementById("circle3").style.display = "none";
+            }  
+
+            document.getElementById("button4").onclick = function() {
+                document.location.reload(); ;
+            }  
+        </script>
+
+        
+
+        
+		
+		
+	
+    </body>
+
+</html>

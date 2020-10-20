@@ -35,21 +35,17 @@
             document.getElementById("versuche").onclick = function(){
                 
                 var meineZahl = document.getElementById("meineZahl").value;
-                
                 var erraten = false;
-                
                 var anzahlDerVersuche = 1;
                             
                 while(erraten == false) {
-                    
+                
                     var schaetzung = Math.random();
                     schaetzung = schaetzung * 6;
                     schaetzung = Math.floor(schaetzung);
                     
                     if(schaetzung == meineZahl){
-                        
                         erraten = true;
-                        
                         alert("Ich hab's! Deine zahl ist " + schaetzung + " ich habe " +  anzahlDerVersuche + " versuche gebraucht!");
                         
                     }else {

@@ -13,22 +13,36 @@
         <button id="myButton">Text aendern!</button>
         
         <p id="zweiterParagraph">Javascript ist ...</p>
-    
         <button id="zweiterButton">Text aendern!</button>
+
+        <p id="dritterParagraph">Hier wird der Tex beim Buttonclick erweitert ...</p>
+        <button id="dritterButton">Text aendern!</button>
         
+        <p id="vierterParagraph">Hier wird innerhtml verwendet beim Buttonpuhs ...</p>
+        <button id="vierterButton">Text aendern!</button>
         
         <script type="text/javascript">
             
             
             document.getElementById("myButton").onclick = function() {
-                
-                document.getElementById("text").innerHTML = "<button>Text aendern!</button>";
+                document.getElementById("text").innerHTML = "<h1>Hallo Denis</h1>";
                 
             }
             
             document.getElementById("zweiterButton").onclick = function() {
+                document.getElementById("zweiterParagraph").innerHTML = "Hallo Jochen";
                 
-                document.getElementById("zweiterParagraph").innerHTML = "Ich finde " + document.getElementById("zweiterParagraph").innerHTML + " super" + "<button>Text aendern!</button>";
+            }
+
+            document.getElementById("dritterButton").onclick = function() {
+                document.getElementById("dritterParagraph").innerHTML =
+                "Ich heiße " + document.getElementById("dritterParagraph").innerHTML + "Hallo Jochen";
+                
+            }
+
+            document.getElementById("vierterButton").onclick = function() {
+                document.getElementById("vierterParagraph").innerHTML = "<h1>Hallo InnerHtml</h1>";
+                document.getElementById("vierterButton").style.backgroundColor = "green"; 
                 
             }
             

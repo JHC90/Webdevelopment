@@ -1,0 +1,48 @@
+<html>
+
+    <head>
+        <title>Javascript</title>
+    </head>
+    
+    <body>
+        <input type="text" id="inhalt">
+        <button id="ok">senden</button>
+        
+        <script type="text/javascript">
+            
+            var myArray = new  Array(); //initilaisieren Array    
+            myArray[0] = "Pizza"; //Anlegen erste Position    
+            myArray[1] = "Schokolade" //Anlegen zweite Position   
+            myArray[2] = 123 //Anlegen zweite Position   
+
+
+            // ausgabe
+            alert(myArray)
+            alert(myArray[1])
+
+            // ausgabe
+            console.log(myArray)
+            console.log(myArray[0])
+            console.log(myArray[1])
+
+            //andere Art array anzulegen
+            var tweets = ["Guten Morgen", "Ich liebe Kaffee"];
+            tweets.push("Aufgeht's!");
+            console.log(tweets)
+            tweets.splice(1,0, "Hallo", "Wie geht's");
+            console.log(tweets)
+            tweets.reverse();
+            console.log(tweets)
+
+        
+
+        </script>
+
+        <p>hier die Seite untersuchen und die Konsolen Elemente begutachten</p> 
+        
+    
+    </body>
+    
+    
+    
+</html>

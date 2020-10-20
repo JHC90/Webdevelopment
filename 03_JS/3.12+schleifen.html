@@ -15,16 +15,15 @@
         <script type="text/javascript">
             
             var tweetString = "";
-            
             var tweets = ["Hallo", "Servus", "Wie geht's", "Guten Abend", "Schlaf gut"];
             
             
            for(var i = 0; i < tweets.length; i++){
-               
+                alert(tweets[i])
                tweetString = tweetString + "<p>" + tweets[i] + "</p>";
-               
            }
             
+            // ausgabe des Tweet-Strings
             document.getElementById("tweetDiv").innerHTML = tweetString;
             
         </script>

@@ -1,0 +1,22 @@
+head{
+ 
+  background-color: pink;
+
+}
+
+header{
+    color: pink;
+    background-color:green;
+  }
+#content{
+    color: oragne;
+    background-color:purple;
+    
+  }
+
+footer{
+  text-align: center;
+    color: white;
+    background-color:black;
+  }
+

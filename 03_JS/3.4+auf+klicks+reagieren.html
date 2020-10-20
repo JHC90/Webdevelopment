@@ -1,33 +1,34 @@
 <html>
-
     <head>
-    
-        
-    
     </head>
     
     <body>
-    
-        <p id="text">Hello World!</p>
-        
-        <button id="myButton">Text aendern!</button>
-    
-        
-        <script type="text/javascript">
-            
-            
-            document.getElementById("myButton").onclick = function() {
-                
-                document.getElementById("text").innerHTML = "Hallo Denis!";
-                
-            }
-            
 
+        <!--Dieser Text soll geändert werden => es braucht eine ID-->
+        <p id="text">Hello World!</p>
+
+         <!--Die Änderung soll beim Button drücken entstehen => es braucht einen Button-->
+        <button id="myButton">Text ändern!</button>
+    
+        <!--Hier die Funktion-->
+        <script type="text/javascript">
+            document.getElementById("myButton").onclick = function() {    
+                document.getElementById("text").innerHTML = "Hallo Jochen!";   
+                document.getElementById("text").style.backgroundColor = "red";  
+                doument.getElementById("myButton").style.backgroundColor = "green";  
+                }
         </script>
+
+        <hr>
+
+        <p> Wenn der Button geklickt wird, so wird eine Funktion ausgeführt.  </p>
+
+        <ol>
+            <li> hole Element mit der ID</li>>
+            <li> Überschreieb mit dem Inhalt mti dem gegebenen Text</li>>
+            <li> Überschreieb mit dem Inhalt mti dem gegebenen Text</li>>
+        </ol>
         
-    
     </body>
-    
-    
-    
+
 </html>

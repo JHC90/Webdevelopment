@@ -1,11 +1,7 @@
 <html>
 
     <head>
-    
         <title>Javascript</title>
-        
-        
-    
     </head>
     
     <body>
@@ -20,25 +16,25 @@
         <script type="text/javascript">
             
            document.getElementById("zauberwortTesten").onclick = function() {
-               
+
+
+               // Element als variable speicher
                var eingegebenesZauberwort = document.getElementById("zauberwort").value;
-               
                var zauberwort = "abrakadabra";
                
-               
-               if(eingegebenesZauberwort == zauberwort){
-                   
+               // if Statement
+               if(eingegebenesZauberwort == zauberwort){    
                    alert("Du darfst rein!")
-                   
-               }else {
-                   
+               }
+               else if(eingegebenesZauberwort == "jhc"){    
+                   alert("Das war das Master Zauberwort")
+               }
+
+               else {
                    alert("Nein, versuch's nochmal");
-                   
+               }
                }
                
-               
-               
-           }
             
 
         </script>
