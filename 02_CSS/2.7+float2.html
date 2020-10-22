@@ -19,14 +19,18 @@
             #ersterAbschnitt {
                 color:blue;
                 background-color: pink;
-                width:100px;
+                width:200px;
+                float: right;
             }
             #zweiterAbschnitt {
-                background-color: yellow;
+                background-color: #00FF0C;
+                width:200px;
+            }
+            .clear-float {
+                clear:both;
             }
         </style>        
     </head>
-    
     <body>
         <div id="ersterAbschnitt">
             <p>Alle Wege führen nach Rom!</p>
@@ -36,5 +40,7 @@
             <p id="green">Dies ist etwas mehr text. <span class="underlined"> Und dies ist unterstrichen.  </span> </p>
             <h1 class="red">CSS ist cool!</h1>
         </div>
+        <div class="clear-float"></div>
+        <p>Etwas mehr Text!</p>
     </body>
 </html>

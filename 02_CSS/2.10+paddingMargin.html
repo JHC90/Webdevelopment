@@ -19,22 +19,35 @@
             #ersterAbschnitt {
                 color:blue;
                 background-color: pink;
-                width:100px;
+                width:200px;
+                margin: 50px 0px 20px 0px;
             }
             #zweiterAbschnitt {
-                background-color: yellow;
+                background-color: #00FF0C;
+                width:400px;
+                padding: 5px 10px 15px 20px;
+                margin: 50px 0px 20px 0px;
+            }
+            body {
+                margin: 0;
+                padding: 0;
+            }
+            p {
+                margin: 0;
+                padding: 0;
             }
         </style>        
     </head>
-    
     <body>
         <div id="ersterAbschnitt">
-            <p>Alle Wege führen nach Rom!</p>
+            <p>Diese Boxen haben sowohl Margin als auch Padding</p>
             <p>Internal CSS ist super!</p>
         </div>
         <div id="zweiterAbschnitt">
-            <p id="green">Dies ist etwas mehr text. <span class="underlined"> Und dies ist unterstrichen.  </span> </p>
+            <p id="green">Diese Boxen haben sowohl Margin als auch Padding</span> </p>
             <h1 class="red">CSS ist cool!</h1>
         </div>
+        <div class="clear-float"></div>
+        <p>Etwas mehr Text!</p>
     </body>
 </html>
