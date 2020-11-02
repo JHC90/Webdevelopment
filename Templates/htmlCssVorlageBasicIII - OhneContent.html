@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="static/css/externalstyle.css">   
+<style>
+
+	
+</style>
+</head>
+<body>
+	<div id="headerBOXabsolute">
+		
+		<div id="headerBOXrelative">
+			
+			<div id="particles-js"></div>
+			
+			<div id="navbar">
+				
+			</div>
+		</div>
+	</div>
+	
+	<div id="contentContainerausen">
+
+		<div id="contentContainer">
+			
+					
+			<div id="aside">
+				
+			</div>
+			
+			<div id="article">
+				
+			</div>
+			
+			<div class="clear-float"></div>
+			
+			
+		</div>
+		
+		<div id="sectionNavigaion">
+			
+		</div>
+
+		<div id="footer">
+		
+		</div>	
+	</div>	
+
+<script>
+// When the user scrolls down 50px from the top of the document, resize the header's font size
+window.onscroll = function() {scrollFunction()};
+function scrollFunction() {
+  if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
+    document.getElementById("headerBOXabsolute").style.height = "15%";
+	document.getElementById("particles-js").style.height = "11%";
+	document.getElementById("aside").style.width = "15%";
+	document.getElementById("article").style.width = "82%";
+	document.getElementById("contentContainerausen").style.margintop = "-10%";
+	
+  } else {
+    document.getElementById("headerBOXabsolute").style.height = "40%";
+	document.getElementById("particles-js").style.height = "21%";
+	document.getElementById("aside").style.width = "17%";
+	document.getElementById("article").style.width = "79%";
+	
+	
+  }
+}
+</script>
+
+<script src="./static/js/particles.min.js"></script>
+<script src="./static/js/particles.js"></script>
+
+</body>
+</html>

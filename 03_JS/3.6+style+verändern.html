@@ -1,28 +1,24 @@
 <html>
-
     <head>
-    
-        
-    
     </head>
-    
     <body>
-    
-
-        
-       
-        
         <p id="mehrText">Dies ist etwas Text</p>
          <button id="styleText">Style den Text</button>
 
+         <p id="zweiterText">Dies ist der Text der veschwindet</p>
+         <button id="deleteText">Lass den Text verschwinden</button>
+        
         <script type="text/javascript">
-            
             document.getElementById("styleText").onclick = function() {
                 document.getElementById("mehrText").style.color = "red";
                 document.getElementById("mehrText").style.fontSize = "50px";
             }  
+
+            document.getElementById("deleteText").onclick = function() {
+                document.getElementById("zweiterText").style.display = "none";
+                document.getElementById("deleteText").style.display = "none";
+               
+            }  
         </script>
-        
     </body>
-     
 </html>
