@@ -1,0 +1,34 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.zoom{
+    width: 100%;
+    height: 100px;
+    position: relative;
+    overflow: hidden;
+    background: url(bg.jpg);
+    background-size: cover;
+}
+
+.zoom:before
+{
+   content:'';
+   position: absolute;
+   bottom: 0;
+   width: 100%;
+   height: 200px;
+   z-index: 1000;
+   background: linear-gradient(transparent #fff);
+}
+.zoom #layer1
+{
+   
+   position: absolute;
+   left: 0;
+   width: 100%;
+   transform: translateX(-50%);
+   z-index: 10;
+  
+}
